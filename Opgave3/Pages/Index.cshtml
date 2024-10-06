@@ -1,0 +1,133 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<head>
+    <!-- Siden skal være responsiv -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Anders Børjesson" />
+    <meta name="description" content="Anders Børjessons hjemmeside" />
+    <meta name="keywords" content="Anders Børjesson, Borjesson, Boerjesson, datalog, JSP, servlet, Roskilde Handelsskole, datamatiker, DMU" />
+    <title>Anders Børjesson</title>
+
+    <!-- Brug af eksternt CSS via Bootstrap for at sikre responsive design -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Eksternt CSS fra Font Awesome til ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Brug af internt CSS -->
+    <link rel="stylesheet" href="css/StyleSheet.css" />
+
+    <style>
+        /* Brug af internt CSS */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+            a:hover {
+                color: #0056b3;
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container header">
+        <a href="https://forsk.dk/arrangorprofiler/erhvervsakademi-sjaelland">Erhvervsakademi Sjælland</a> ~ Anders Børjesson
+    </div>
+
+    <!-- Brug af Bootstrap grid (container + row) for responsivt design -->
+    <div class="container profile-info shadow-box">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Anders Børjesson (anbo)</h3>
+                <p>
+                    Cand.scient. i matematik og datalogi<br>
+                    Lektor på Datamatikeruddannelsen<br>
+                    Zealand, Sjællands Erhvervsakademi, Roskilde
+                </p>
+            </div>
+            <div class="col-md-4 text-right">
+                <p>
+                    <strong>Address (work):</strong><br>
+                    Maglegårdsvej 2, 4000 Roskilde<br>
+                    <strong>E-mail (work):</strong> anbo(at)zealand.dk
+                </p>
+                <a href="https://anbo-easj.dk/cv/" class="btn custom-button"><i class="fas fa-file-alt"></i> CV</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Teaching autumn 2019</h4>
+                <p>
+                    <!-- Hardcode links til de gamle sider -->
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vQnP5GDXd2YmuUapbnNgaUAK-4gsDtZGDl-qZT-g3xsUCSvPhfr1OTdo7esf_b3qm3ypfQSwMuz5Mab/pub">
+                        Programmering 3sem
+                    </a>, Datamatiker <br>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vQSdR7ZSr7DfFCc8SC0tSqz8VaLKHN8LCGRmfxTFVnl1GgkHnk_Wr_-7r_Lr5EX-qpOt7sBzo6SmHH0/pub">
+                        Mobile Application Development
+                    </a>, 4th semester Comp Science<br>
+                    <a href="https://anbo-easj.dk/internship/index.html">Internship</a>, 5th semester, Comp Science<br>
+                    <a href="https://anbo-easj.dk/dissertation2020spring/">Dissertation course</a>
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Teaching spring 2019</h4>
+                <p>
+                    <a href="https://anbo-easj.dk/mobile2019spring/index.html">Mobile Application Development</a>, 4th semester Comp Science<br>
+                    <a href="https://anbo-easj.dk/internship/index.html">Internship</a>, 5th semester, Comp Science<br>
+                    <a href="https://anbo-easj.dk/dissertation2019spring/">Dissertation course</a>
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Teaching autumn 2018</h4>
+                <p>
+                    <a href="https://anbo-easj.dk/prog3_2018autumn/index.html">Programming, 3rd semester, Comp Science</a><br>
+                    <a href="https://anbo-easj.dk/mobile2018autumn/index.html">Mobile Application Development</a>, 4th semester Comp Science<br>
+                    <a href="https://anbo-easj.dk/internship/index.html">Internship</a>, 5th semester, Comp Science<br>
+                    <a href="https://anbo-easj.dk/dissertation2018autumn/">Dissertation course</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="Previouscourses" style="padding: 20px;font-weight: bold;">
+        <a href="https://anbo-easj.dk/undervisning/">Previous courses</a>
+    </div>
+
+    <hr>
+
+    <div class="container links-section shadow-box">
+        <p>
+            <a href="https://msdn.microsoft.com/en-us/default.aspx"><i class="fas fa-laptop-code"></i> Microsoft Developer Network</a> |
+            <a href="https://msdn.microsoft.com/en-us/library/default.aspx"><i class="fas fa-book"></i> MSDN Library: Intro. til programmeringssprog mv.</a> <br>
+            <a href="https://anbo-easj.dk/bekendtgoerelser/"><i class="fas fa-gavel"></i> Bekendtgørelser</a> om datamatiker-uddannelsen, eksamen og lign. |
+            <a href="https://anbo-easj.dk/index.htm"><i class="fas fa-link"></i> Index</a>
+        </p>
+    </div>
+</body>
